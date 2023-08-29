@@ -1,0 +1,151 @@
+
+dl{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: #999999;
+    color: red;
+    margin-left: -10px;
+    
+ 
+
+}
+header div{
+
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 110px;
+
+}
+img{
+ width: 80px;
+ height: 80px;
+}
+
+
+
+#contact{
+    position: absolute;
+    top: 10px;
+    right: 613px;
+    width: 348px;
+}
+#contact h3{
+    display: none;
+
+}
+.contact {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+  }
+
+  .contact-type {
+    color: white;
+    background-color: red;
+    flex: 1;
+    
+     text-align: left; 
+    margin-right: -240px;
+  }
+
+  .contact-value {
+    width: 100%;
+    background-color:black ;
+    color: red;
+    
+    flex: 2;
+    margin-right: -33px;
+  }
+
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content #about,
+.content #competencies,
+.content #experiences,
+.content #education
+{
+    width: 40%;
+    margin-left: 120px;
+    margin-top: 40px;
+
+}
+#hobbies{
+    margin-left: 120px;
+}
+.skill{
+    background-color: #999999;
+    margin: 2px;
+    padding: .5rem;
+
+}
+.skill > span{
+    background-color: red;
+    color: white;
+    display: block;
+    height: 70%;
+    width: 20%;
+    padding: .5rem;
+    /* margin: .5rem 0 5rem; */
+}
+.skills-primary > .skill:nth-child(1) span {
+    width:50%;
+}
+.skills-primary > .skill:nth-child(2) span {
+    width:30%;
+}
+.skills-primary > .skill:nth-child(3) span {
+    width:10%;
+}
+.skills-secondary > .skill:nth-child(1) span {
+    width:90%;
+}
+.skills-secondary > .skill:nth-child(2) span {
+    width:50%;
+}
+.skills-secondary > .skill:nth-child(3) span {
+    width:70%;
+}
+.experience-type ,.experience-institution{
+    color: red;
+}
+.experience-location ,.day ,.month ,.year{
+    opacity: 0.5;
+}
+.experience-date-separator{
+    color: red;
+}
+h3::before{
+    content: "\2022";
+    color: red;
+    font-size: 60px;
+    margin-right: 8px;
+    
+}
+h3 {
+    border-bottom: 1px solid grey;
+}
+.skills-primary::before{
+    content: "Main";
+    display: block;
+}
+.skills-secondary::before{
+    content: "Other";
+    display: block;
+}
+.skills-secondary{
+    opacity: 0.6;
+}
+figure{
+    left: 580px;
+    position: absolute;
+}
