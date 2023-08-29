@@ -20,7 +20,7 @@ header div{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 110px;
+    height: 120px;
 
 }
 img{
@@ -33,8 +33,8 @@ img{
 #contact{
     position: absolute;
     top: 10px;
-    right: 613px;
-    width: 348px;
+    right: 113px;
+    width: 50%;
 }
 #contact h3{
     display: none;
@@ -146,6 +146,55 @@ h3 {
     opacity: 0.6;
 }
 figure{
-    left: 580px;
+    left: 80px;
     position: absolute;
+    top: 100px;
 }
+
+ @media screen and (max-width:1250px) {
+   
+  
+
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+
+    }
+    body{
+        margin: 5px;
+    }
+    #contact{
+        position: initial;
+        width: 100%; 
+        background-color: initial;
+       margin-right: 60pz;
+
+    }
+    #contact > h3{
+        display: block;
+    }
+    .contact-skype > .contact-value{
+        color: black;
+
+    }
+    #hobbies > ul{
+        margin-left: 1rem;
+    }
+    .content #about,
+.content #competencies,
+.content #experiences,
+.content #education{
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+header ,.div{
+    height: 200px;
+}
+    
+ }
