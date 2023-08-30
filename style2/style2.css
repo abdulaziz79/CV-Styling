@@ -252,4 +252,48 @@ h2{
                             display: none;
                         }                        
 
-                     
+                        @media screen and (max-width:720px) {
+                           #wrapper {
+                            margin:75px
+                           }
+                            #wrapper >header > div >figure >img{
+                                display: none;
+                            
+                        }
+                        #competencies {
+                            flex-direction: column;
+                            align-items: start;
+                            margin-bottom: 30px;
+                            
+                    
+                        }
+                        #competencies h3 {
+                            border: none; 
+                            width: auto; 
+                            height: auto; 
+                            margin-bottom: 20px;
+                        }
+                        .skills-primary,
+                        .skills-secondary {
+                            position: initial;
+                            right: 0;
+                            top: 0;
+                            margin: 0;
+                            justify-content: center; /* Center skills */
+                            align-items: center;
+                        }
+                        .skill {
+                            margin: 10px 10px; /* Adjust margin for narrow screens */
+                        }
+                        .skill{
+                            width:120px;
+                        }
+                        #competencies h3 , #experiences h3 ,#education h3,#hobbies h3{
+                            border-right: none;
+                            text-decoration: underline;
+                        }
+                        .contacts{
+                            flex-direction: row;
+                            justify-content: flex-start;
+                        }
+                    }
