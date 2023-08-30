@@ -1,0 +1,255 @@
+body {
+    margin : 40px 90px 0 90px ;
+}
+h1{
+    font-style:inherit;
+}
+h2{
+    display: none;
+}
+#wrapper >header > div >figure >img{
+    position: absolute;
+    top: 59px;
+    right: 106px;
+    width: 150px;
+    height: 150px;
+    
+    rotate: -15deg;
+}
+.content > #about >h3{
+    display: none;
+}
+#about {
+    font-style: italic;
+    border-top:1px solid gray ;
+    opacity: 0.5;
+    width: 78%;
+    margin-bottom: 7rem;
+}
+#competencies > h3{
+    font-style: italic;
+    display: flex;
+
+}
+.skill{
+    margin-right: 15px;
+}
+.skills-primary{
+    display: flex;
+    flex-direction: row;
+    
+}
+.skills-secondary{
+    display: flex;
+    flex-direction: row;
+    
+}
+.skill {
+    padding: 9px;
+    width: 201px;
+    height: 33px;
+    background-color: rgb(69, 121, 121);
+    color: white;
+}
+.skills :nth-child(1)::after{
+    content: "\2605\2605 ";
+    width: 20px;
+    height: 40px;
+    
+}
+
+#competencies{
+    display:grid ;
+    grid-template-areas:
+    'one two'
+    'one three';
+    grid-template-columns: 150px auto;
+    row-gap: 30px;
+    margin-bottom: 30px;
+}
+#competencies h3{
+    grid-area:one;
+    border-right: 1px solid gray;
+
+}
+#competencies .skills-primary{
+    grid-area: two;
+    margin-left: 30px;
+
+}
+#competencies .skills-secondary{
+    grid-area: three;
+    margin-left: 30px;
+}
+#experiences > h3{
+    font-style: italic;
+}
+#experiences > .experience > h4 > .experience-institution{
+    display: none;
+}
+#experiences > .experience >.experience-details > .experience-date{
+    display: none;
+}
+#experiences > .experience >.experience-details > .experience-location{
+    display: none;
+}
+
+#experiences{
+    display: grid;
+    grid-template-areas:
+    'onee twoo'
+    'onee threee';
+    grid-template-columns: 150px auto;
+    row-gap: 30px;
+    margin-bottom: 30px;
+}
+
+#experiences h3{
+    grid-area: onee;
+    border-right: 1px solid grey;
+}
+
+#experiences .experience-description{
+    grid-area: twoo;
+    margin-left: 30px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+#experiences .experience-type{
+    color: rgb(24, 167, 167);
+    letter-spacing: 1px;
+    font-style:inherit;
+    margin-left: 1rem;
+    font-weight: 1000;
+}
+#education >h3{
+    font-style: italic;
+}
+#education >.experience >.experience-details >.experience-date{
+    display: none;
+}
+#education >.experience >.experience-details >.experience-location{
+    display: none;
+}
+#education .experience-institution{
+    display: none;
+}
+#education {
+    display: grid;
+    grid-template-areas:
+    'onee twoo'
+    'onee threee';
+    grid-template-columns: 150px auto;
+    row-gap: 30px;
+    margin-bottom: 30px;
+
+}
+#education h3{
+    grid-area: onee;
+    border-right: 1px solid grey;
+
+}
+#education .experience-type{
+    color: rgb(24, 167, 167);
+    letter-spacing: 1px;
+    font-style:inherit;
+    margin-left: 1rem;
+    font-weight: 1000;
+
+}
+#education .experience-description{
+    grid-area: twoo;
+    margin-left: 30px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+#hobbies{
+    display: grid;
+    grid-template-areas:
+    'onee twoo'
+    'onee threee';
+    grid-template-columns: 150px auto;
+    row-gap: 30px;
+    margin-bottom: 30px;
+    
+}
+#hobbies h3{
+    grid-area: onee;
+    border-right: 1px solid grey;
+}
+#contact img{
+  width: 80px;
+  height: 80px;
+}
+#contact > .contacts >.contact-email >.contact-type {
+    display: none;}
+    #contact > .contacts >.contact-skype >.contact-type {
+        display: none;}
+
+        #contact > .contacts >.contact-skype >.contact-value {
+            display: none;}
+            #contact > .contacts >.contact-phone >.contact-type {
+                display: none;}
+
+                #contact > .contacts >.contact-github >.contact-type {
+                    display: none;} 
+                    #contact > .contacts >.contact-facebook >.contact-type {
+                        display: none;}            
+    
+                        .contacts{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            position: relative;
+                            margin-left: 100px;
+                        }
+                     
+                        contact-email::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 30px;
+                            width: 90px;
+                            height: 90px;
+                            background-image: url('/public/images/email.png'); 
+                            background-size: cover;
+                            background-position: center;
+                        }
+                        .contact-phone::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 164px;;
+                            width: 90px;
+                            height: 90px;
+                            background-image: url('/public/images/phone.png'); 
+                            background-size: cover;
+                            background-position: center;
+                        }
+                        .contact-github::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 287px;
+                            width: 90px;
+                            height: 90px;
+                            background-image: url('/public/images/github.png'); 
+                            background-size: cover;
+                            background-position: center;
+                        }
+                        .contact-facebook::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 387px;
+                            width: 90px;
+                            height: 90px;
+                            background-image: url('/public/images/facebook.png'); 
+                            background-size: cover;
+                            background-position: center;
+                        }
+                         .contact-value , .contact-type , #contact h3{
+                            display: none;
+                        }                        
+
+                     
